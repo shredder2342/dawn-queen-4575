@@ -58,3 +58,14 @@ To learn more about Next.js, take a look at the following resources:
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+## n8n Workflow
+
+A ready-to-import workflow is available at `n8n/workflows/scrape-latest-article.json`. It uses a Telegram bot to receive a message containing a website URL, scrapes the latest article on that site, summarizes it with the OpenAI node and sends the result back to Telegram.
+
+1. Import the JSON file in your n8n instance.
+2. Configure credentials for **Telegram** and **OpenAI**.
+3. Start the workflow and send a site URL (for example `https://www.goldmansachs.com/insights/`) to your bot.
+
+The workflow will respond with a short summary of the article's main points.
+
